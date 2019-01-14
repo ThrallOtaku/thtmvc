@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * Created by thrall on 2018/12/23.
+ * spring的注解都是基于jdk提供的基础的annotation
  */
 @Target({ElementType.TYPE,ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

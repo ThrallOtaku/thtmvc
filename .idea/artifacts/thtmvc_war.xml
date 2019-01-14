@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="thtmvc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="tht-mvc-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="thtmvc:war exploded" />
+    </root>
+  </artifact>
+</component>

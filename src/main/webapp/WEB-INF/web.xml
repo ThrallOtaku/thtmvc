@@ -3,17 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-
+    <!--Tomcat启动的时候会先加载web.xml，把servlet加载进来-->
     <servlet>
         <servlet-name>DispatcherServlet</servlet-name>
+        <!--容器创建的时候需要初始化的类-->
         <servlet-class>com.tht.servlet.DispatcherServlet</servlet-class>
-
         <load-on-startup>0</load-on-startup>
     </servlet>
 
     <servlet-mapping>
+        <!--url拦截-->
         <servlet-name>DispatcherServlet</servlet-name>
+        <!--所有都拦截-->
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
 </web-app>
